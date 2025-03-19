@@ -105,7 +105,7 @@ def get_dataloaders(
     batch_size=32,
     num_workers=4,
     use_mixup=True,
-    image_size=180,
+    image_size=244,
     augmentation_strength="strong",
 ):
     """Create train and validation dataloaders with configurable augmentations."""

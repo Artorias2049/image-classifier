@@ -34,7 +34,7 @@ def load_model(model_path, model_name, num_classes, device=None):
     return model, device
 
 
-def get_transforms(image_size=180, augment=False):
+def get_transforms(image_size=244, augment=False):
     """Get basic transforms or augmented versions for TTA"""
     mean, std = [0.485, 0.456, 0.406], [0.229, 0.224, 0.225]
 
@@ -131,7 +131,7 @@ def evaluate_samples(
     class_mapping,
     device,
     output_dir="plots",
-    image_size=180,
+    image_size=244,
     use_tta=False,
 ):
     """Evaluate and visualize model performance on samples"""
@@ -242,7 +242,7 @@ def main():
     parser.add_argument("--train-path", default="./cleaned_dataset/train")
     parser.add_argument("--samples-per-class", type=int, default=2)
     parser.add_argument("--output-dir", default="plots")
-    parser.add_argument("--image-size", type=int, default=180)
+    parser.add_argument("--image-size", type=int, default=244)
     parser.add_argument(
         "--use-tta", action="store_true", help="Use test-time augmentation"
     )

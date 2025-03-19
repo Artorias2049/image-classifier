@@ -94,7 +94,7 @@ This will generate:
    - `--no-mixup`: Disable mixup augmentation
    - `--no-preprocess`: Skip preprocessing steps
    - `--augmentation`: Augmentation strength ("none", "light", "medium", "strong")
-   - `--image-size`: Target image size (default: 180)
+   - `--image-size`: Target image size (default: 244)
    - `--input-dir`: Path to input dataset (default: "./vehicle_dataset")
    - `--output-dir`: Path to output dataset (default: "./cleaned_dataset")
    - `--logs-dir`: Path to save logs (default: "./train_logs")
@@ -125,7 +125,7 @@ This will generate:
    - `--train-path`: Path to the training dataset (default: "./cleaned_dataset/train")
    - `--samples-per-class`: Number of samples per class to evaluate (default: 2)
    - `--output-dir`: Directory to save visualization outputs (default: "plots")
-   - `--image-size`: Target image size (default: 180)
+   - `--image-size`: Target image size (default: 244)
    - `--use-tta`: Enable test-time augmentation
 
 2. The script will output:
@@ -154,7 +154,7 @@ This will generate:
 
 - **Data Analysis**: Automated analysis of dataset statistics and distributions
 - **Data Cleaning**: Automatic removal of problematic images using CleanVision
-- **Data Preprocessing**: Consistent image resizing with padding (180×180)
+- **Data Preprocessing**: Consistent image resizing with padding (244×244)
 - **Advanced Augmentations**: RandomAugment, RandomErasing, Mixup
 - **Model Architecture Options**: ResNet, EfficientNet, MobileNet
 - **Training Optimizations**:

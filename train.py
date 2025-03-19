@@ -89,7 +89,7 @@ def parse_args():
         help="Augmentation strength",
     )
     parser.add_argument(
-        "--image-size", type=int, default=180, help="Target image size"
+        "--image-size", type=int, default=244, help="Target image size"
     )
     parser.add_argument(
         "--input-dir",

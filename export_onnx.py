@@ -11,7 +11,7 @@ def export_to_onnx(
     output_path,
     model_name="efficientnet_b0",
     num_classes=12,
-    input_shape=(1, 3, 180, 180),
+    input_shape=(1, 3, 244, 244),
     verify=True,
 ):
     """Export PyTorch model to ONNX format"""

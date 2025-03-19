@@ -11,7 +11,7 @@ from tqdm import tqdm
 class ImagePreprocessor:
     """Class to handle image preprocessing with configurable parameters"""
 
-    def __init__(self, target_size=(180, 180), padding_color=(255, 255, 255)):
+    def __init__(self, target_size=(244, 244), padding_color=(255, 255, 255)):
         self.target_size = target_size
         self.padding_color = padding_color
 
@@ -95,7 +95,7 @@ def clean_problematic_directories(dir_path):
 def preprocess_dataset(
     dataset_path,
     output_path,
-    target_size=(180, 180),
+    target_size=(244, 244),
     padding_color=(255, 255, 255),
     num_workers=None,
 ):
